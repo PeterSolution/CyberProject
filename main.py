@@ -276,6 +276,7 @@ for window_num in sorted(time_windows.keys()):
     print(f"\nOkno {window_num + 1} ({start_readable}):")
     print(f"  📊 Max połączenia: {max_connections}, Pakiety: {total_packets}")
     if a == 0:
+        is_ddos_neural = False
         print(f"  🧠 Sieć neuronowa: {'🚨 DDOS' if is_ddos_neural else '✅ Normal'} ({probability-0.34:.1%})")
         a="1"
     else:
